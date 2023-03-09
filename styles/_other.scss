@@ -62,8 +62,8 @@
         }
 
         &__text {
-            width: 92px;
-            height: 26px;
+            max-width: 92px;    
+            max-height: 26px;
             text-align: center;
 
             font-family: fonts.$main-font;
@@ -74,6 +74,8 @@
 
             letter-spacing: 1.4px;
             text-transform: uppercase;
+
+            margin-right: 5px;
 
             color: #FFFFFF;
         }

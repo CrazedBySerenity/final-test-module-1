@@ -30,13 +30,14 @@
                 </div>
 
                 <form class="search__container">
-                    <input class="search__input res-text--small" type="text" placeholder="Search Your Travel Destination" required maxlength="50">
+                    <input class="search__input" type="text" placeholder="Search Your Travel Destination" required maxlength="50">
                     <label for="submit" class="search__label">
+                        <input id="submit" type="submit" value="Search">
                         <p class="search__label__text res-text--small">
                             Search
                         </p>
-                        <img src="images/mag-glass.svg" alt="a magnifying glass">
-                        <input id="submit" type="submit" value="Search">
+                        <img class="search__mag-glass" src="images/mag-glass.svg" alt="a magnifying glass">
+
                     </label>
                 </form>
 
@@ -49,17 +50,17 @@
             <div class="nav__card">
                 <a href="#start"><h2 class="nav__header res-text--medium">BHROMAON</h2></a>
                 <ul class="nav__list">
-                    <li class="nav__list__item"><a class="nav__list__link res-text--small" href="#">WHO WE ARE</a></li>
-                    <li class="nav__list__item"><a class="nav__list__link res-text--small" href="#">WHAT WE DO</a></li>
-                    <li class="nav__list__item"><a class="nav__list__link res-text--small" href="#">TRAVEL WITH US</a></li>
-                    <li class="nav__list__item"><a class="nav__list__link res-text--small" href="#">CONTACT US</a></li>
+                    <li class="nav__list__item"><a class="nav__list__link res-text--small" href="#section-2">WHO WE ARE</a></li>
+                    <li class="nav__list__item"><a class="nav__list__link res-text--small" href="#section-4">WHAT WE DO</a></li>
+                    <li class="nav__list__item"><a class="nav__list__link res-text--small" href="#section-6">TRAVEL WITH US</a></li>
+                    <li class="nav__list__item"><a class="nav__list__link res-text--small" href="#footer">CONTACT US</a></li>
                 </ul>
                 <a class="nav__menu__icon" href="#"><i class="fa-solid fa-ellipsis-vertical fa-2x"></i></a>
             </div>
         </nav>
     </section>
 
-    <section class="section section-2 section__background">
+    <section class="section section-2 section__background" id="section-2">
         <div class="section__content__container section__content__container--2">
             <div class="section-2__card">
                 <div class="section-2__header__container">
@@ -85,10 +86,10 @@
             </div>
         </div>
     </section>
-    <section class="section section-3">
+    <section class="section section-3" id="section-3">
         <img class="section-3__img" src="images/How It Works.svg" alt="Infographic of how our service works">
     </section>
-    <section class="section section-4">
+    <section class="section section-4 section__background" id="section-4">
         <div class="section__content__container section__content__container--4-5">
             <div class="section-4-5__card">
                 <h4 class="section-4-5__small-header">
@@ -109,7 +110,7 @@
         </div>
     </section>
 
-    <section class="section section-5">
+    <section class="section section-5 section__background" id="section-5">
         <div class="section__content__container section__content__container--4-5">
             <div class="section-4-5__card section-5__card--align-right">
                 <h4 class="section-4-5__small-header">
@@ -130,18 +131,18 @@
         </div>
     </section>
 
-    <section class="section section-6">
-        <h2 class="section-6__header">
+    <section class="section section-6 section__background" id="section-6">
+        <h2 class="section-6__header res-text--semi-large">
             What Our Tourists Say
         </h2>
         <div class="section-6__card">
             <img class="section-6__img" src="images/sam-sumon.png" alt="man on top of a mountain">
             <div class="section-6__content__container">
                 <div class="section-6__content__text__container">
-                    <h4 class="section-6__content__header">
+                    <h4 class="section-6__content__header res-text--medium">
                         Sam Sumon
                     </h4>
-                    <p class="section-6__content__text">
+                    <p class="section-6__content__text res-text--small">
                         <i class="fa-solid fa-quote-left fa-3x section-6__content__icon"></i>
                         But I must explain to you how all this mistaken idea of account to 
                         denouncinpleasure and praising pain  But I must explain to you how 
@@ -154,7 +155,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <a href="#start">
             <h3 class="footer__header">
             BHROMAON
