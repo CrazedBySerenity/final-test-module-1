@@ -17,22 +17,22 @@
     <title>BHROMAON</title>
 </head>
 <body class="center-on-screen">
-    <section class="section section-1 section__background">
+    <section class="section section-1 section__background" id="start">
         <div class="section__content__container section__content__container--1">
             <div class="section-1__card">
                 <div class="section-1__header__container">
-                    <h1 class="section-1__header">
+                    <h1 class="section-1__header res-text--large">
                         BHROMAON
                     </h1>
-                    <h3 class="section-1__header__title-text">
+                    <h3 class="section-1__header__title-text res-text--medium">
                         Safe Travel Anywhere
                     </h3>
                 </div>
 
                 <form class="search__container">
-                    <input class="search__input" type="text" placeholder="Search Your Travel Destination" required maxlength="50">
+                    <input class="search__input res-text--small" type="text" placeholder="Search Your Travel Destination" required maxlength="50">
                     <label for="submit" class="search__label">
-                        <p class="search__label__text">
+                        <p class="search__label__text res-text--small">
                             Search
                         </p>
                         <img src="images/mag-glass.svg" alt="a magnifying glass">
@@ -45,15 +45,16 @@
         </div>
 
         <!-- Add hover effects for nav elements -->
-        <nav class="nav__container">
+        <nav class="nav__container" id="navbar">
             <div class="nav__card">
-                <h2 class="nav__header">BHROMAON</h2>
+                <a href="#start"><h2 class="nav__header res-text--medium">BHROMAON</h2></a>
                 <ul class="nav__list">
-                    <li class="nav__list__item"><a class="nav__list__link" href="#">WHO WE ARE</a></li>
-                    <li class="nav__list__item"><a class="nav__list__link" href="#">WHAT WE DO</a></li>
-                    <li class="nav__list__item"><a class="nav__list__link" href="#">TRAVEL WITH US</a></li>
-                    <li class="nav__list__item"><a class="nav__list__link" href="#">CONTACT US</a></li>
+                    <li class="nav__list__item"><a class="nav__list__link res-text--small" href="#">WHO WE ARE</a></li>
+                    <li class="nav__list__item"><a class="nav__list__link res-text--small" href="#">WHAT WE DO</a></li>
+                    <li class="nav__list__item"><a class="nav__list__link res-text--small" href="#">TRAVEL WITH US</a></li>
+                    <li class="nav__list__item"><a class="nav__list__link res-text--small" href="#">CONTACT US</a></li>
                 </ul>
+                <a class="nav__menu__icon" href="#"><i class="fa-solid fa-ellipsis-vertical fa-2x"></i></a>
             </div>
         </nav>
     </section>
@@ -62,19 +63,19 @@
         <div class="section__content__container section__content__container--2">
             <div class="section-2__card">
                 <div class="section-2__header__container">
-                    <h2 class="section-2__header">
+                    <h2 class="section-2__header res-text--semi-large">
                         Why Choose Us
                     </h2>
-                    <p class="section-2__header__title-text basic-text">
+                    <p class="section-2__header__title-text basic-text res-text--small">
                         Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, 
                         so blinded by desire, that they cannot foresee 
                     </p>
-                    <p class="section-2__header__title-text basic-text">
+                    <p class="section-2__header__title-text basic-text res-text--small">
                         Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.
                     </p>
                     <btn class="section-2__btn">
                         <img class="section-2__btn__decor" alt="button decor" src="images/half-button.svg">
-                        <p class="section-2__btn__text">EXPLORE PLACES</p>
+                        <p class="section-2__btn__text res-text--medium">EXPLORE PLACES</p>
                     </btn>
                 </div>
             </div>
@@ -136,12 +137,12 @@
         <div class="section-6__card">
             <img class="section-6__img" src="images/sam-sumon.png" alt="man on top of a mountain">
             <div class="section-6__content__container">
-                <h4 class="section-6__content__header">
-                    Sam Sumon
-                </h4>
                 <div class="section-6__content__text__container">
-                    <i class="fa-solid fa-quote-left section-6__content__icon"></i>
+                    <h4 class="section-6__content__header">
+                        Sam Sumon
+                    </h4>
                     <p class="section-6__content__text">
+                        <i class="fa-solid fa-quote-left fa-3x section-6__content__icon"></i>
                         But I must explain to you how all this mistaken idea of account to 
                         denouncinpleasure and praising pain  But I must explain to you how 
                         all this mistaken idea of account to nai denouncing pleasure and praising 
@@ -152,5 +153,46 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <a href="#start">
+            <h3 class="footer__header">
+            BHROMAON
+            </h3>
+        </a>
+        <h4 class="footer__header__title-text">
+            Safe Travel Anywhere
+        </h4>
+        <div class="footer__logo__container">
+            <a href="#"><i class="fa-brands fa-facebook-f fa-2x footer__logo--white"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fa-2x footer__logo--white"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in fa-2x  footer__logo--blue"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube fa-2x footer__logo--white"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest fa-2x footer__logo--white"></i></a>
+        </div>
+    </footer>
 </body>
+
+
+<!-- <script>
+//This javascript was copy-pasted from the internet to make the navbar work, I did not write it
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+} 
+</script> -->
 </html>
