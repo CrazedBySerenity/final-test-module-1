@@ -1,6 +1,21 @@
+.center-on-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: #333333;
+}
+
 .section {
   max-width: 1773px;
-  min-height: 820px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,6 +31,10 @@
           align-items: center;
 }
 .section__content__container {
+  max-width: 1112px;
+  width: 100%;
+}
+.section__content__container--1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,13 +45,20 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1112px;
-  width: 100%;
   margin-top: auto;
   margin-bottom: auto;
 }
+.section__content__container--2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .section-1 {
   background: url(../images/background-images/mountain-top-BG.png);
+  min-height: 820px;
 }
 .section-1__header {
   font-family: "Josefin Sans", sans-serif;
@@ -51,6 +77,87 @@
   letter-spacing: 6.8200001717px;
   text-align: center;
   color: #FFFFFF;
+}
+.section-2 {
+  background: url(../images/background-images/eu-city-BG.png);
+  min-height: 685px;
+}
+.section-2__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.section-2__header {
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+}
+.section-2__header__container {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  max-width: 560px;
+  height: 507px;
+}
+.section-2__btn {
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #5474FD;
+  width: 228px;
+  height: 63px;
+}
+.section-2__btn__text {
+  position: absolute;
+}
+.section-2__btn__decor {
+  margin-right: auto;
+}
+.section-2__img {
+  margin-top: 10px;
+}
+.section-2__img--translate-left {
+  -webkit-transform: translateX(-90px);
+          transform: translateX(-90px);
 }
 
 .nav__container {
@@ -101,7 +208,7 @@
   list-style-type: none;
 }
 .nav__list__item {
-  margin-left: 11px;
+  margin-left: 30px;
 }
 .nav__list__link {
   text-decoration: none;
@@ -116,6 +223,16 @@
 
 .section-1__content__card {
   margin-top: auto;
+}
+
+.basic-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 1.6px;
+  text-align: left;
+  color: #FFFFFF;
 }
 
 .search__container {
