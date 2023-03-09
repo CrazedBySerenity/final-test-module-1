@@ -1,0 +1,48 @@
+@use 'fonts';
+
+.section {
+    max-width: 1773px;
+    min-height: 820px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__content__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1112px;
+        width: 100%;
+
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    &-1 {
+        background: url(../images/background-images/mountain-top-BG.png);
+
+        &__header {
+            font-family: fonts.$header-font;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 26px;
+            letter-spacing: 4.800000190734863px;
+            text-align: center;
+
+            color: fonts.$text-color;
+
+            &__title-text {
+                font-family: fonts.$header-font;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 26px;
+                letter-spacing: 6.820000171661377px;
+                text-align: center;
+
+                color: fonts.$text-color;
+            }
+        }
+    }
+}
