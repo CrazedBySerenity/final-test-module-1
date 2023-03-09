@@ -70,4 +70,12 @@
         }
     }
 
+    &__menu {
+        
+        &__icon {
+            color: fonts.$text-color;
+            display: none;
+        }
+    }
+
 }

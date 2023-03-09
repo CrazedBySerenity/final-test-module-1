@@ -398,52 +398,11 @@
   text-align: left;
   color: #FFFFFF;
 }
+.nav__menu__icon {
+  color: #FFFFFF;
+  display: none;
+}
 
-@media screen and (max-width: 1149px) and (min-width: 820px) {
-  .section-2__header__container {
-    margin-left: 15px;
-  }
-  .section-2__card {
-    margin-bottom: 15px;
-  }
-  .section__content__container--2 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .section-4-5__card {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-  .section-6__card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 15px;
-    width: auto;
-    opacity: 0.7;
-  }
-  .section-6__content__container {
-    width: auto;
-  }
-}
-@media screen and (max-width: 819px) {
-  .nav__list {
-    display: none;
-  }
-}
 .section-1__content__card {
   margin-top: auto;
 }
@@ -601,6 +560,113 @@
   margin-bottom: 53px;
 }
 
+@media screen and (max-width: 1149px) and (min-width: 820px) {
+  .section-2__header__container {
+    margin-left: 15px;
+  }
+  .section-2__card {
+    margin-bottom: 15px;
+  }
+  .section__content__container--2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .section-4-5__card {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .section-6__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px;
+    width: auto;
+    opacity: 0.7;
+  }
+  .section-6__content__container {
+    width: auto;
+  }
+}
+@media screen and (max-width: 819px) {
+  .res-text--small {
+    font-size: 12px;
+  }
+  .res-text--medium {
+    font-size: 18px;
+  }
+  .res-text--semi-large {
+    font-size: 24px;
+  }
+  .res-text--large {
+    font-size: 32px;
+  }
+  .nav__list {
+    display: none;
+  }
+  .nav__menu__icon {
+    display: block;
+  }
+  .section__content__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-2__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .section-2__img {
+    max-width: 290px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .section-2__img--translate-left {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  .section-2__header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 a {
   text-decoration: none;
 }
