@@ -1,6 +1,13 @@
 @use 'fonts';
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .nav {
+
     &__container {
         display: flex;
         justify-content: center;
@@ -30,6 +37,10 @@
         text-align: left;
 
         color: fonts.$text-color;
+
+        &:hover {
+            color: fonts.$bg-color;
+        }
     }
 
     &__list {
@@ -44,7 +55,7 @@
         }
 
         &__link {
-            text-decoration: none;
+
             font-family: fonts.$main-font;
             font-size: 14px;
             font-weight: 400;

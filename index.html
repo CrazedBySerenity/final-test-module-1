@@ -17,7 +17,7 @@
     <title>BHROMAON</title>
 </head>
 <body class="center-on-screen">
-    <section class="section section-1 section__background">
+    <section class="section section-1 section__background" id="start">
         <div class="section__content__container section__content__container--1">
             <div class="section-1__card">
                 <div class="section-1__header__container">
@@ -45,9 +45,9 @@
         </div>
 
         <!-- Add hover effects for nav elements -->
-        <nav class="nav__container">
+        <nav class="nav__container" id="navbar">
             <div class="nav__card">
-                <h2 class="nav__header">BHROMAON</h2>
+                <a href="#start"><h2 class="nav__header">BHROMAON</h2></a>
                 <ul class="nav__list">
                     <li class="nav__list__item"><a class="nav__list__link" href="#">WHO WE ARE</a></li>
                     <li class="nav__list__item"><a class="nav__list__link" href="#">WHAT WE DO</a></li>
@@ -136,12 +136,12 @@
         <div class="section-6__card">
             <img class="section-6__img" src="images/sam-sumon.png" alt="man on top of a mountain">
             <div class="section-6__content__container">
-                <h4 class="section-6__content__header">
-                    Sam Sumon
-                </h4>
                 <div class="section-6__content__text__container">
-                    <i class="fa-solid fa-quote-left section-6__content__icon"></i>
+                    <h4 class="section-6__content__header">
+                        Sam Sumon
+                    </h4>
                     <p class="section-6__content__text">
+                        <i class="fa-solid fa-quote-left fa-3x section-6__content__icon"></i>
                         But I must explain to you how all this mistaken idea of account to 
                         denouncinpleasure and praising pain  But I must explain to you how 
                         all this mistaken idea of account to nai denouncing pleasure and praising 
@@ -152,5 +152,46 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <a href="#start">
+            <h3 class="footer__header">
+            BHROMAON
+            </h3>
+        </a>
+        <h4 class="footer__header__title-text">
+            Safe Travel Anywhere
+        </h4>
+        <div class="footer__logo__container">
+            <a href="#"><i class="fa-brands fa-facebook-f fa-2x footer__logo--white"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fa-2x footer__logo--white"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in fa-2x  footer__logo--blue"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube fa-2x footer__logo--white"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest fa-2x footer__logo--white"></i></a>
+        </div>
+    </footer>
 </body>
+
+
+<script>
+//This javascript was copy-pasted from the internet to make the navbar work, I did not write it
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+} 
+</script>
 </html>
