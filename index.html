@@ -8,9 +8,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ca80037ee7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
-    <title>Bhromaon</title>
+    <title>BHROMAON</title>
 </head>
 <body>
     <div class="center-on-screen">
@@ -19,7 +23,7 @@
                 <div class="section-1__card">
                     <div class="section-1__header__container">
                         <h1 class="section-1__header">
-                            Bhromaon
+                            BHROMAON
                         </h1>
                         <h3 class="section-1__header__title-text">
                             Safe Travel Anywhere
@@ -27,19 +31,25 @@
                     </div>
 
                     <form class="search__container">
-                        <input type="text" placeholder="Search Your Travel Destination">
-                        <input type="submit" value="Search">
+                        <input class="search__input" type="text" placeholder="Search Your Travel Destination" required maxlength="50">
+                        <label for="submit" class="search__label">
+                            <p class="search__label__text">
+                                Search
+                            </p>
+                            <img src="images/mag-glass.svg" alt="a magnifying glass">
+                            <input id="submit" type="submit" value="Search">
+                        </label>
                     </form>
                 </div>
             </div>
             <nav class="nav__container">
                 <div class="nav__card">
-                    <h2 class="nav__header">Bhromaon</h2>
+                    <h2 class="nav__header">BHROMAON</h2>
                     <ul class="nav__list">
-                        <li class="nav__list__item"><a class="nav__list__link" href="#">Who we are</a></li>
-                        <li class="nav__list__item"><a class="nav__list__link" href="#">What we do</a></li>
-                        <li class="nav__list__item"><a class="nav__list__link" href="#">Travel with us</a></li>
-                        <li class="nav__list__item"><a class="nav__list__link" href="#">Contact us</a></li>
+                        <li class="nav__list__item"><a class="nav__list__link" href="#">WHO WE ARE</a></li>
+                        <li class="nav__list__item"><a class="nav__list__link" href="#">WHAT WE DO</a></li>
+                        <li class="nav__list__item"><a class="nav__list__link" href="#">TRAVEL WITH US</a></li>
+                        <li class="nav__list__item"><a class="nav__list__link" href="#">CONTACT US</a></li>
                     </ul>
                 </div>
             </nav>
