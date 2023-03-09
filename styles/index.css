@@ -14,7 +14,7 @@
 }
 
 .section {
-  max-width: 1773px;
+  max-width: 1770px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,6 +55,15 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.section__content__container--4-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .section-1 {
   background: url(../images/background-images/mountain-top-BG.png);
@@ -159,7 +168,120 @@
   -webkit-transform: translateX(-90px);
           transform: translateX(-90px);
 }
-
+.section-3__img {
+  width: 100%;
+}
+.section-4 {
+  background: url(../images/background-images/designer-house-BG.png);
+  min-height: 700px;
+}
+.section-4-5__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #232323;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+  padding: 32px;
+  max-width: 543px;
+  max-height: 374px;
+  width: 100vh;
+  height: 100vh;
+}
+.section-4-5__small-header {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 1.5px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.section-4-5__large-header {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.section-4-5__text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.section-5 {
+  background: url(../images/background-images/cliff-bg.png);
+  min-height: 700px;
+}
+.section-5__card--align-right {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.section-6 {
+  background: url(../images/background-images/summit-BG.png);
+  min-height: 731px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-6__header {
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 26px;
+  /* identical to box height, or 72% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+.section-6__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1110px;
+  background-color: #333333;
+}
+.section-6__content__header {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height, or 130% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #FEFEFE;
+}
 .nav__container {
   display: -webkit-box;
   display: -ms-flexbox;
