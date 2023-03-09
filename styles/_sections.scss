@@ -1,8 +1,18 @@
 @use 'fonts';
 
+.center-on-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+
+    background: #333333;
+}
+
 .section {
     max-width: 1773px;
-    min-height: 820px;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -10,18 +20,27 @@
     align-items: center;
 
     &__content__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+
         max-width: 1112px;
         width: 100%;
 
-        margin-top: auto;
-        margin-bottom: auto;
+        &--1 {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        &--2 {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 
     &-1 {
         background: url(../images/background-images/mountain-top-BG.png);
+        min-height: 820px;
 
         &__header {
             font-family: fonts.$header-font;
@@ -45,4 +64,75 @@
             }
         }
     }
+
+    &-2 {
+        background: url(../images/background-images/eu-city-BG.png);
+        min-height: 685px;
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        &__header {
+            font-family: fonts.$main-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 26px;
+
+            display: flex;
+            align-items: center;
+
+            color: #FFFFFF;
+
+            &__container {
+                align-self: flex-end;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                
+                max-width: 560px;
+                height: 507px;
+            }
+        }
+
+        &__btn {
+            font-family: fonts.$main-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+
+            background-color: fonts.$style-color;
+
+            width: 228px;
+            height: 63px;
+            &__text {
+                position: absolute;
+            }
+
+            &__decor {
+                margin-right: auto;
+            }
+        }
+        
+        &__img {
+            margin-top: 10px;
+
+            &--translate-left {
+                transform: translateX(-90px);
+            }
+        }
+    }
 }
+

@@ -6,6 +6,16 @@
     margin-top: auto;
 }
 
+.basic-text {
+    font-family: fonts.$header-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: fonts.$text-color;
+}
+
 .search {
     &__container {
         display:flex;

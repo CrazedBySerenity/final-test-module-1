@@ -16,45 +16,73 @@
     <link rel="stylesheet" href="styles/index.css">
     <title>BHROMAON</title>
 </head>
-<body>
-    <div class="center-on-screen">
-        <section class="section section-1 section__background">
-            <div class="section__content__container">
-                <div class="section-1__card">
-                    <div class="section-1__header__container">
-                        <h1 class="section-1__header">
-                            BHROMAON
-                        </h1>
-                        <h3 class="section-1__header__title-text">
-                            Safe Travel Anywhere
-                        </h3>
-                    </div>
+<body class="center-on-screen">
+    <section class="section section-1 section__background">
+        <div class="section__content__container section__content__container--1">
+            <div class="section-1__card">
+                <div class="section-1__header__container">
+                    <h1 class="section-1__header">
+                        BHROMAON
+                    </h1>
+                    <h3 class="section-1__header__title-text">
+                        Safe Travel Anywhere
+                    </h3>
+                </div>
 
-                    <form class="search__container">
-                        <input class="search__input" type="text" placeholder="Search Your Travel Destination" required maxlength="50">
-                        <label for="submit" class="search__label">
-                            <p class="search__label__text">
-                                Search
-                            </p>
-                            <img src="images/mag-glass.svg" alt="a magnifying glass">
-                            <input id="submit" type="submit" value="Search">
-                        </label>
-                    </form>
+                <form class="search__container">
+                    <input class="search__input" type="text" placeholder="Search Your Travel Destination" required maxlength="50">
+                    <label for="submit" class="search__label">
+                        <p class="search__label__text">
+                            Search
+                        </p>
+                        <img src="images/mag-glass.svg" alt="a magnifying glass">
+                        <input id="submit" type="submit" value="Search">
+                    </label>
+                </form>
+
+                <!-- Add scroll down text and icon here -->
+            </div>
+        </div>
+
+        <!-- Add hover effects for nav elements -->
+        <nav class="nav__container">
+            <div class="nav__card">
+                <h2 class="nav__header">BHROMAON</h2>
+                <ul class="nav__list">
+                    <li class="nav__list__item"><a class="nav__list__link" href="#">WHO WE ARE</a></li>
+                    <li class="nav__list__item"><a class="nav__list__link" href="#">WHAT WE DO</a></li>
+                    <li class="nav__list__item"><a class="nav__list__link" href="#">TRAVEL WITH US</a></li>
+                    <li class="nav__list__item"><a class="nav__list__link" href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section class="section section-2 section__background">
+        <div class="section__content__container section__content__container--2">
+            <div class="section-2__card">
+                <div class="section-2__header__container">
+                    <h2 class="section-2__header">
+                        Why Choose Us
+                    </h2>
+                    <p class="section-2__header__title-text basic-text">
+                        Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, 
+                        so blinded by desire, that they cannot foresee 
+                    </p>
+                    <p class="section-2__header__title-text basic-text">
+                        Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.
+                    </p>
+                    <btn class="section-2__btn">
+                        <img class="section-2__btn__decor" alt="button decor" src="images/half-button.svg">
+                        <p class="section-2__btn__text">Explore places</p>
+                    </btn>
                 </div>
             </div>
-            <nav class="nav__container">
-                <div class="nav__card">
-                    <h2 class="nav__header">BHROMAON</h2>
-                    <ul class="nav__list">
-                        <li class="nav__list__item"><a class="nav__list__link" href="#">WHO WE ARE</a></li>
-                        <li class="nav__list__item"><a class="nav__list__link" href="#">WHAT WE DO</a></li>
-                        <li class="nav__list__item"><a class="nav__list__link" href="#">TRAVEL WITH US</a></li>
-                        <li class="nav__list__item"><a class="nav__list__link" href="#">CONTACT US</a></li>
-                    </ul>
-                </div>
-            </nav>
-
-        </section>
-    </div>
+            <div class="section-2__card no-flex">
+                <img class="section-2__img section-2__img--translate-left" src="images/lakehouse.png" alt="Old house by a lake">
+                <img class="section-2__img" src="images/mountain-top.png" alt="Person standing on a mountain top and looking out over the valley">
+            </div>
+        </div>
+    </section>
 </body>
 </html>
