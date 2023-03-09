@@ -11,7 +11,7 @@
 }
 
 .section {
-    max-width: 1773px;
+    max-width: 1770px;
     width: 100%;
 
     display: flex;
@@ -35,6 +35,11 @@
         &--2 {
             display: flex;
             justify-content: space-between;
+        }
+
+        &--4-5 {
+            display: flex;
+            flex-direction: column;
         }
     }
 
@@ -132,6 +137,77 @@
             &--translate-left {
                 transform: translateX(-90px);
             }
+        }
+    }
+
+    &-3 {
+        &__img {
+            width: 100%;
+        }
+    }
+
+    &-4 {
+        background: url(../images/background-images/designer-house-BG.png);
+        min-height: 700px;
+
+        &-5 {
+            &__card {
+                display: flex;
+                flex-direction: column;
+
+                background: #232323;
+                mix-blend-mode: normal;
+                opacity: 0.9;
+
+                padding: 32px;
+    
+                max-width: 543px;
+                max-height: 374px;
+                width: 100vh;
+                height: 100vh;
+            }
+
+            &__small-header {
+                font-family: fonts.$header-font;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 26px;
+                letter-spacing: 1.5px;
+                text-align: left;
+
+                color: fonts.$text-color;
+            }
+
+            &__large-header {
+                font-family: fonts.$header-font;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 26px;
+                letter-spacing: 0px;
+                text-align: left;
+
+                color: fonts.$text-color;
+            }
+
+            &__text {
+                font-family: fonts.$header-font;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                letter-spacing: 0px;
+                text-align: left;        
+                
+                color: fonts.$text-color;
+            }
+        }
+    }
+
+    &-5 {
+        background: url(../images/background-images/cliff-bg.png);
+        min-height: 700px;
+
+        &__card--align-right {
+            align-self: flex-end;
         }
     }
 }
