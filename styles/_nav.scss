@@ -1,0 +1,20 @@
+.nav {
+    &__container {
+        display: flex;
+        justify-content: center;
+
+        margin-top: auto;
+        width: 100%;
+        height: 83px;
+
+        background-color: purple;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+
+        max-width: 1112px;
+        width: 100%;
+    }
+}
