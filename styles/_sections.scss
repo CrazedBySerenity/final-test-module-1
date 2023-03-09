@@ -7,7 +7,7 @@
 
     width: 100%;
 
-    background: #333333;
+    background: fonts.$bg-color;
 }
 
 .section {
@@ -208,6 +208,69 @@
 
         &__card--align-right {
             align-self: flex-end;
+        }
+    }
+
+    &-6 {
+        background: url(../images/background-images/summit-BG.png);
+        min-height: 731px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        &__header {
+            font-family: fonts.$main-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 26px;
+
+            /* identical to box height, or 72% */
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+
+        &__card {
+            display: flex;
+
+            max-width: 1110px;
+
+            background-color: fonts.$bg-color;
+        }
+
+        &__content {
+            &__header {
+                font-family: fonts.$header-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 26px;
+                
+                /* identical to box height, or 130% */
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                
+                color: #FEFEFE;
+                
+                
+            }
+
+            &__icon {
+
+            }
+            
+            &__text {
+
+                &__container {
+
+                }
+            }
         }
     }
 }
